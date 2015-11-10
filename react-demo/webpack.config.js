@@ -3,7 +3,7 @@ const webpack = require('webpack');
 
 module.exports = {
 	entry: {
-		app: './index.js'
+		app: path.join(__dirname, 'index.js')
 	},
 	output: {
 		path: path.join(__dirname, 'static'),
@@ -15,11 +15,7 @@ module.exports = {
 			{
 				test: /\.js$/,
 				exclude: path.join(__dirname, 'node_modules'),
-				loader: 'babel',
-				query: {
-	                cacheDirectory: false,
-	                presets: ['es2015']
-            	}
+				loader: 'babel?experimental',
 			}
 		]
 	},
@@ -30,6 +26,6 @@ module.exports = {
                 warnings: false
             }
         }),
-        new webpack.optimize.AggressiveMergingPlugin(),
+        new webpack.optimize.AggressiveMergingPlugin()
 	]
 }
