@@ -1,0 +1,19 @@
+{
+  "name": "spa-perf",
+  "version": "1.0.0",
+  "description": "Demo to test Performance of SPA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vigneshshanmugam/spa-perf.git"
+  },
+  "author": "Vignesh Shanmugam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vigneshshanmugam/spa-perf/issues"
+  },
+  "homepage": "https://github.com/vigneshshanmugam/spa-perf#readme"
+}
